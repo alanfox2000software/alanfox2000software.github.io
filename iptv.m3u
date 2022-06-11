@@ -35,11 +35,9 @@ http://livetv.dnsfor.me/channel.3.m3u8
 http://livetv.dnsfor.me/channel.4.m3u8 
 #EXTINF:-1 tvg-id="630" tvg-name="Now Sports Prime" tvg-logo="https://live.hkanime.com.hk/png_logo/96.png" group-title="[Now] 電訊盈科媒體",Now Sports Prime
 http://livetv.dnsfor.me/channel.12.m3u8
-#EXTINF:-1 tvg-ID="108" tvg-name="有線財經資訊" tvg-logo="https://rb.gy/gxr0zk"  group-title="[icable] 有線電視",有線財經資訊台
+#EXTINF:-1 tvg-ID="108" tvg-name="有線財經資訊" tvg-logo="https://github.com/alanfox2000software/alanfox2000software.github.io/raw/main/channelLogo/108.png"  group-title="[icable] 有線電視",有線財經資訊台
 https://uc6.i-cable.com/live_freedirect/freehd208_h.live/playlist.m3u8
-#EXTINF:-1 tvg-ID="109" tvg-name="有線新聞" tvg-logo="https://rb.gy/e83tun"  group-title="[icable] 有線電視",有線新聞台
+#EXTINF:-1 tvg-ID="109" tvg-name="有線新聞" tvg-logo="https://github.com/alanfox2000software/alanfox2000software.github.io/raw/main/channelLogo/109.png"  group-title="[icable] 有線電視",有線新聞台
 https://uc6.i-cable.com/live_freedirect/freehd209_h.live/playlist.m3u8
-#EXTINF:-1 tvg-ID="301" tvg-name="有線綜合娛樂台" tvg-logo="https://rb.gy/z4axvr"  group-title="[icable] 有線電視",有線綜合娛樂台
-http://gslbmeiah.cdn.hk.chinamobile.com/livehls/MOB-CN/03.m3u8
-#EXTINF:-1 tvg-id="110" tvg-name="有線直播新聞台 "tvg-logo="https://rb.gy/os4eh1"  group-title="[icable] 有線電視",有線直播新聞台
-https://api.leonardpark.dev/live/icable/110
+#EXTINF:-1 tvg-id="110" tvg-name="有線直播新聞台 "tvg-logo="https://github.com/alanfox2000software/alanfox2000software.github.io/raw/main/channelLogo/110.png"  group-title="[icable] 有線電視",有線直播新聞台
+https://uc6.i-cable.com/live_freedirect/hd110_h.live/playlist.m3u8
