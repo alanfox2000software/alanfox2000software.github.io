@@ -25,7 +25,21 @@ https://cdn.hklive.tv/hls/84b/index.m3u8
 https://cdn.hklive.tv/hls/85/index.m3u8
 #EXTINF:-1 tvg-id="99" tvg-name="ViuTV" tvg-logo="https://live.hkanime.com.hk/png_logo/99.png" group-title="[Viu] 香港電視娛樂",ViuTV
 https://cdn.hklive.tv/hls/99/index.m3u8
-#EXTINF:-1 tvg-id="96" tvg-name="ViuTV" tvg-logo="https://live.hkanime.com.hk/png_logo/96.png" group-title="[Viu] 香港電視娛樂",ViuTV Six
+#EXTINF:-1 tvg-id="96" tvg-name="ViuTV Six" tvg-logo="https://live.hkanime.com.hk/png_logo/96.png" group-title="[Viu] 香港電視娛樂",ViuTV Six
 https://cdn.hklive.tv/hls/96/index.m3u8
-#EXTINF:-1 tvg-id="96" tvg-name="ViuTV" tvg-logo="https://live.hkanime.com.hk/png_logo/96.png" group-title="[Viu] 香港電視娛樂",ViuTV Six （第二聲度）
+#EXTINF:-1 tvg-id="96" tvg-name="ViuTV Six（第二聲度）" tvg-logo="https://live.hkanime.com.hk/png_logo/96.png" group-title="[Viu] 香港電視娛樂",ViuTV Six （第二聲度）
 https://cdn.hklive.tv/hls/96b/index.m3u8
+#EXTINF:-1 tvg-id="331" tvg-name="Now 直播台" tvg-logo="https://live.hkanime.com.hk/png_logo/96.png" group-title="[Now] 電訊盈科媒體",Now 直播台
+http://livetv.dnsfor.me/channel.3.m3u8
+#EXTINF:-1 tvg-id="332" tvg-name="Now 新聞台" tvg-logo="https://live.hkanime.com.hk/png_logo/96.png" group-title="[Now] 電訊盈科媒體",Now 新聞台
+http://livetv.dnsfor.me/channel.4.m3u8 
+#EXTINF:-1 tvg-id="630" tvg-name="Now Sports Prime" tvg-logo="https://live.hkanime.com.hk/png_logo/96.png" group-title="[Now] 電訊盈科媒體",Now Sports Prime
+http://livetv.dnsfor.me/channel.12.m3u8
+#EXTINF:-1 tvg-ID="108" tvg-name="有線財經資訊" tvg-logo="https://rb.gy/gxr0zk"  group-title="[icable] 有線電視",有線財經資訊台
+https://uc6.i-cable.com/live_freedirect/freehd208_h.live/playlist.m3u8
+#EXTINF:-1 tvg-ID="109" tvg-name="有線新聞" tvg-logo="https://rb.gy/e83tun"  group-title="[icable] 有線電視",有線新聞台
+https://uc6.i-cable.com/live_freedirect/freehd209_h.live/playlist.m3u8
+#EXTINF:-1 tvg-ID="301" tvg-name="有線綜合娛樂台" tvg-logo="https://rb.gy/z4axvr"  group-title="[icable] 有線電視",有線綜合娛樂台
+http://gslbmeiah.cdn.hk.chinamobile.com/livehls/MOB-CN/03.m3u8
+#EXTINF:-1 tvg-id="110" tvg-name="有線直播新聞台 "tvg-logo="https://rb.gy/os4eh1"  group-title="[icable] 有線電視",有線直播新聞台
+https://api.leonardpark.dev/live/icable/110
