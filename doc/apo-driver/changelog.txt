@@ -1,0 +1,641 @@
+23/02/2025
+APO Driver 2.11.0
+- Update Dolby DAX API Service to 3.30804.841.0
+- Update Nahimic 3 APO to 3.7.2.0
+- Update Nahimic APO 4 to 4.12.5.0
+- Remove FX Configurator 
+
+12/10/2024
+APO Driver 2.11.0
+- Update Dolby DAX API Service to 3.30703.732.0
+- Update DTS APO 4x Service to 1.14.17.0
+- Update DTS APO 4x to 1.14.10.0
+- Update Nahimic APO 4 to 4.11.6.0
+
+14/08/2024
+APO Driver 2.10.9
+- Update Dolby DAX API Service to 3.30701.711.0
+- Update DTS APO 4x Service to 1.14.15.0
+- Update DTS APO 4x to 1.14.9.0
+- Update Nahimic Mirroring Device to 2.0.5.0
+- Update Nahimic Easy Surround to 2.0.4
+
+12/03/2024
+APO Driver 2.10.8
+- Update Dolby DAX API Service to 3.30603.637.0
+- Update DTS APO 4x Service to 1.14.2.0
+- Update DTS APO 4x to 1.14.9.0
+- Update Nahimic 3 APO to 3.7.0.0
+- Update Nahimic APO 4 to 4.10.4.0
+
+04/07/2023
+APO Driver 2.10.7
+- Update Dolby DAX API Service to 3.30507.572.0
+- Update DTS APO 4x Service to 1.11.2.0
+- Update DTS APO 4x to 1.11.6.0
+- Update Nahimic 3 APO to 3.5.6.0
+- Update Nahimic APO 4 to 4.9.10.0
+- Update Nahimic Mirroring Device to 2.0.3.0
+- Add Nahimic Easy Surround 2.0.2.0
+
+13/07/2022
+APO Driver 2.10.6
+- Update Dolby DAX API Service to 3.30307.371.0
+
+28/05/2022
+APO Driver 2.10.5
+- Update Dolby DAX API Service to 3.30304.345.0
+
+07/05/2022
+APO Driver 2.10.4
+- Update Dolby DAX API Service to 3.30303.338.0
+
+15/02/2022
+APO Driver 2.10.3
+- Update Dolby DAX API Service to 3.30300.326.0
+- Update DTS APO 4x Service to 1.10.9.0
+- Update DTS APO 4x to 1.10.12.0
+- Update CriDspApo Component to 24.1.0.6
+
+31/01/2022
+APO Driver 2.10.2
+- Update Dolby DAX API Service to 3.30205.250.0
+- Update Nahimic APO 4 to 4.7.1.0
+- Update DTS APO 4x Service to 1.10.7.0
+- Update DTS APO 4x to 1.10.11.0
+
+17/12/2021
+APO Driver 2.10.1
+- Update Dolby DAX API Service to 3.30202.224.0
+- Update Nahimic 3 APO to 3.5.1.0
+- Update Nahimic APO 4 to 4.6.2.0
+- Update Nahimic Mirroring Device to 2.0.0.0
+- Update Sonic Studio Virtual Mixer to 1.0.2.0
+
+28/11/2021
+APO Driver 2.10.0
+- Update Dolby DAX API Service to 3.30101.135.0
+- Update Nahimic 3 APO to 3.5.0.0
+- Update Nahimic APO 4 to 4.6.1.0
+- Update DTS APO 4x Service to 1.10.2.0
+- Update DTS APO 4x to 1.10.3.0
+
+12/10/2021
+APO Driver 2.9.9
+- Update Nahimic APO 4 to 4.5.0.0
+
+27/09/2021
+APO Driver 2.9.8
+- Update Dolby DAX API Service to 3.30100.124.0
+- Update DTS APO 4x to 1.7.12.0
+- Update Nahimic APO 4 to 4.4.0.0
+
+28/08/2021
+APO Driver 2.9.7
+- Update Dolby DAX API Service to 3.30100.120.0
+- Update DTS APO 4x Service to 1.6.17.0
+- Update Nahimic APO 4 to 4.3.3.0
+
+11/08/2021
+APO Driver 2.9.6
+- Update Dolby DAX API Service to 3.3001.52.0
+- Update DTS APO 4x Service to 1.6.16.0
+
+16/07/2021
+APO Driver 2.9.5
+- Update Dolby DAX API Service to 3.3000.15.0
+- Update Nahimic 3 APO to 3.3.3.0
+
+20/06/2021
+APO Driver 2.9.4
+- Update Dirac APO 4.0.1
+- Update Nahimic APO 4 to 4.2.3.0
+
+22/05/2021
+APO Driver 2.9.3
+- Update Nahimic 3 APO to 3.3.1.0
+- Update Nahimic APO 4 to 4.2.1.0
+
+30/04/2021
+APO Driver 2.9.2
+- Update Dolby DAX API Service to 3.20901.918.0
+- Update DTS APO 4x to 1.6.15.0
+- Update DTS APO 4x Service to 1.6.11.0
+
+25/03/2021
+APO Driver 2.9.1
+- Update Dolby DAX API Service to 3.20901.917.0
+
+20/02/2021
+APO Driver 2.9.0
+- Update Dolby DAX API Service to 3.20901.916.0
+- Update DTS APO 4x to 1.6.9.0
+
+07/02/2021
+APO Driver 2.8.9
+- Update Dolby DAX API Service to 3.20900.911.0
+
+01/02/2021
+APO Driver 2.8.8
+- Update Nahimic 3 APO to 3.2.2.0
+
+18/01/2021
+APO Driver 2.8.7
+- Update Dolby DAX API Service to 3.20802.829.0
+- Update Nahimic APO 4 to 4.1.5.0
+
+07/12/2020
+APO Driver 2.8.6
+- Update DTS APO 4x to 1.6.5.0
+- Update DTS APO 4x Service to 1.6.4.0
+- Add support for Sonic Studio 3/Sonic Radar 3
+- Add support for Nahimic 3 UWP app 1.5.x
+- Add Dolby product config for DAPv251-VLLDP120
+- Add Nahimic Mirroring Device 8.51.48.758
+- Add Sonic Studio Virtual Mixer 10.38.41.588
+
+28/11/2020
+APO Driver 2.8.5
+- Update Dolby DAX API Service to 3.20801.826.0
+- Update DTS APO 4x Service to 1.6.3.0
+
+14/11/2020
+APO Driver 2.8.4
+- Update Nahimic 3 APO to 3.1.0.0
+- Update DTS APO 4x Service to 1.6.2.0
+
+31/10/2020
+APO Driver 2.8.3
+- Update Nahimic APO 4 to 4.0.1
+- Update Dolby DAX API Service to 3.20705.753.0
+
+25/10/2020
+APO Driver 2.8.2
+- Update Nahimic APO 4 to 3.0.0
+- Update Nahimic 3 APO to 3.0.0
+- Update Dolby DAX API Service to 3.20703.733.0
+
+30/09/2020
+APO Driver 2.8.1
+- Update DTS APO 4x to 1.6.3.0
+- Update DTS APO 4x Service to 1.5.3.0
+- Update DTS APO3x APO (UWP) to 1.2.0.0
+- Update Nahimic APO 4 to 1.3.5
+
+10/09/2020
+APO Driver 2.8.0
+- Update Dolby DAX API Service to 3.20702.725.0
+
+01/09/2020
+APO Driver 2.7.9
+- Remove Dolby XML 3.2 / 3.3 Product Config
+
+31/08/2020
+APO Driver 2.7.8
+- Update Dolby DAX API Service to 3.20700.715.0
+- Update Nahimic 3 APO to 1.8.4
+- Add Nahimic APO 4 1.3.4
+
+12/08/2020
+APO Driver 2.7.7
+- Update DTS APO 4x to 1.5.0.0
+
+23/07/2020
+APO Driver 2.7.6
+- Update Nahimic 3 APO to 1.8.2
+
+17/07/2020
+APO Driver 2.7.5
+- Update Dolby DAX API Service to 3.20602.651.0
+- Update DTS APO 4x Service to 1.4.5.0
+- Add unlock install apps from Microsoft Store feature
+
+28/06/2020
+APO Driver 2.7.4
+- Update FX Configurator to 2.0.5.1
+
+FX Configurator 2.0.5.1
+Fix "C:\Windows\system32\config\systemprofile\Desktop is unavailable" popup
+Add rebuild all audio endpoints feature
+
+13/06/2020
+APO Driver 2.7.3
+- Update DTS APO3x APO (UWP) to 1.1.3.0
+
+08/06/2020
+APO Driver 2.7.2
+- Update Dolby DAX API Service to 3.20602.646.0
+- Update Nahimic 3 APO to 1.8.1
+
+30/05/2020
+APO Driver 2.7.1
+- Update Creative UWP PRC Service to 2.0.3.4
+
+30/04/2020
+APO Driver 2.7.0
+- Update Dolby DAX API Service to 3.20602.640.0
+
+23/04/2020
+APO Driver 2.6.9
+- Update Nahimic 3 APO to 1.7.2
+
+23/01/2020
+APO Driver 2.6.8
+- Update Dolby DAX API Service to 3.20602.637.0
+
+04/01/2020
+APO Driver 2.6.7
+- Update Dolby DAX API Service to 3.20602.633.0
+
+19/12/2019
+APO Driver 2.6.6
+- Update Nahimic 3 APO to 1.6.3
+
+APO Driver 2.6.5
+- Update Dolby DAX API Service to 3.20602.630.0
+
+04/11/2019
+APO Driver 2.6.4
+- Update Nahimic 3 APO to 1.6.1
+
+04/11/2019
+APO Driver 2.6.3
+- Update DTS APO3x APO (UWP) to 1.1.1.0
+
+07/10/2019
+APO Driver 2.6.2
+- Update DTS APO3x APO to 1.0.20.0
+- Update FX Configurator to 2.0.2.5
+
+FX Configurator 2.0.2.5
+- Add muliple product configs base on devices
+
+28/09/2019
+APO Driver 2.6.1
+- Update Nahimic 3 APO to 1.5.1
+
+16/09/2019
+APO Driver 2.6.0
+- Update Dolby DAX API Service to 3.20501.517.0
+
+27/08/2019
+APO Driver 2.5.9
+- Add Samsung EDS 1.4.0.0
+- Add Sonic Focus Effects 2.0.0.13
+
+14/08/2019
+APO Driver 2.5.8
+- Remove Dolby Dolby DAX API Service 2.3.231.0
+- Update Dolby DAX API Service to 3.20500.513.0
+
+13/08/2019
+APO Driver 2.5.7
+- Add Dirac APO 1.0.1
+
+31/07/2019
+APO Driver 2.5.6
+- Update Dolby DAX API Service to 3.20403.440.0
+- Update Nahimic Service Component to 1.4.2.0
+
+19/07/2019
+APO Driver 2.5.5
+- Update Creative UWP PRC Service to 2.0.2.5
+
+08/07/2019
+APO Driver 2.5.4
+- Update Dolby DAX API Service to 3.20403.439.0
+
+19/06/2019
+APO Driver 2.5.3
+- Update Dolby DAX API Service to 3.20403.437.0
+
+16/06/2019
+APO Driver 2.5.2
+- Update DTS Universal APO to 3.6.11.0
+
+15/06/2019
+APO Driver 2.5.1
+- Update Dolby DAX API Service to 3.20403.436.0
+
+31/05/2019
+APO Driver 2.5.0
+- Update Nahimic Service Component to 1.3.2.0
+
+16/05/2019
+APO Driver 2.4.9
+- Fix EXE and MSI file signature mismatch
+
+14/05/2019
+APO Driver 2.4.8
+- Update Dolby DAX API Service to 3.20402.432.0
+
+04/05/2019
+APO Driver 2.4.7
+- Update Dolby DAX API Service to 3.20402.430.0
+
+27/04/2019
+APO Driver 2.4.6
+- Update Nahimic Service Component to 1.3.1.0
+
+16/04/2019
+APO Driver 2.4.5
+- Update Dolby DAX API Service to 3.20402.424.0
+
+18/03/2019
+APO Driver 2.4.4
+- Update Dolby DAX API Service to 3.20301.323.0
+
+09/03/2019
+APO Driver 2.4.3
+- Add Dolby Headphones (Turtle Beach)
+- Update Dolby DAX API Service to 3.20301.321.0
+
+27/02/2019
+APO Driver 2.4.2
+- Add VIA 3D Virtual Surround
+- Update Harman APO 2019 x64 to 1.1.0.2
+
+16/02/2019
+APO Driver 2.4.1
+- Update Dolby DAX API Service to 3.20301.320.0
+- Update DTS Universal APO to 3.5.18.0
+- Update Dolby DAX3 x64 to 1.1.8.14
+- Add Harman APO 2019 x64
+
+31/01/2019
+APO Driver 2.4.0
+- Update Dolby DAX API Service to 3.20301.319.0
+
+21/01/2019
+APO Driver 2.3.9
+- Update Dolby DAX API Service to 3.20201.269.0
+
+17/01/2019
+APO Driver 2.3.8
+- Update Nahimic Service Component to 1.2.4.0
+
+11/01/2019
+APO Driver 2.3.7
+- Update Dolby DAX API Service to 3.20201.265.0
+
+25/12/2018
+APO Driver 2.3.6
+- All APO DLL files were digitally signed
+- Add missing 32-bit DTSAPOUI.dll for DTS Digital Entertainment
+- Update FX Configurator to 2.0.1.9
+
+FX Configurator 2.0.1.9
+- Fix Offload Mode FX APO Processing Modes reading
+- Hide not present endpoint(s)
+
+20/12/2018
+APO Driver 2.3.5
+- Update Nahimic Service Component to 1.2.3.0
+
+26/11/2018
+APO Driver 2.3.4
+- Update Nahimic Service Component to 1.2.2.0
+- Add Nahimic UWP Generic preset
+- Add DTS Win7/8 and 8.1 presets
+- Update FX Configurator to 2.0.1.8
+
+FX Configurator 2.0.1.8
+- Fix registry premission problem when restore endpoint registry
+
+27/11/2018
+APO Driver 2.3.3
+- Support DTS Connect (DTS NEO:PC + DTS Interactive)
+
+26/11/2018
+APO Driver 2.3.2
+- Support Dolby Digital Format on HDMI and S/PDIF connections (PCEE4/PCEE3/DS1)
+- Update FX Configurator to 2.0.1.7
+
+FX Configurator 2.0.1.7
+- Fix GFX APO control
+
+23/11/2018
+APO Driver 2.3.1
+- Update Dolby DAX API Service to 3.20201.262.0 (For Win 10 RS4 RS5)
+- Update DtsApo4Service.exe
+
+8/11/2018
+APO Driver 2.3.0
+- Update Nahimic Service Component to 1.2.1.0
+
+7/11/2018
+APO Driver 2.2.9
+- Update UWPPRCService to 2.0.2.4
+- Update DTS Universal APO to 4.0.24.0
+
+4/11/2018
+APO Driver 2.2.8
+- Update UWPPRCService to 2.0.2.3
+
+31/10/2018
+APO Driver 2.2.7
+- Update DTS Universal APO to 4.0.2.0
+- Add SRS Premium Sound property which will show if RtPgEx64.dll or RtkPgExt.dll is found on C:\Windows\System32 (Realtek HDA installation required)
+- Update FX Configurator to 2.0.1.6
+
+FX Configurator 2.0.1.6
+- Fix high DPI scaling
+
+20/10/2018
+APO Driver 2.2.6
+- Add DTS Audio Processing UWP app support
+- Update Dolby DAX API Service to 3.20201.257.0 which support Win10 RS5
+
+1/10/2018
+APO Driver 2.2.5
+- Update UWPPRCService to 2.0.2.2
+- Update FX Configurator to 2.0.1.5
+
+FX Configurator 2.0.1.5
+- Add reg and regedit options
+
+29/9/2018
+APO Driver 2.2.4
+- Update Dolby DAX API Service to 3.20201.256.0
+
+22/9/2018
+APO Driver 2.2.3
+- Fix DTS Audio Desktop App Win7+ and  Win8.1+ Product Config
+- Add support for both DTS Custom Desktop and UWP apps
+- Add support for both DTS Sound Desktop and UWP apps
+- Update FX Configurator to 2.0.1.4
+- Update Dolby DAX API Service 3.xxxxx.yyy.z requirement (At least Win10 RS3)
+
+FX Configurator 2.0.1.4
+- Adjust SetACL commands to take ownership of registry keys
+
+20/9/2018
+APO Driver 2.2.2
+- Update Dolby DAX API Service to 3.20201.252.0
+- Update Nahimic Service Component to 1.1.8.0
+
+14/9/2018
+APO Driver 2.2.1
+- Update MBAPO232.dll and MBAPO264.dll to 1.2.65.18 for Creative Generic 
+- Add support for Dolby Atmos Speaker System for Gaming
+- Update DTS UWP Driver to 1.0.14.0
+
+31/8/2018
+APO Driver 2.2.0
+- Update MBAPO232.dll and MBAPO264.dll to 1.2.65.18 for Creative Generic Driver 
+- Add support for DTS Studio Sound UWP app
+
+29/8/2018
+APO Driver 2.1.9
+- Remove Dolby DAX API Service 2.1003.255.0
+- Update Dolby DAX API Service 3.20201.249.0
+- Update Dolby DAX API Service 2.3.231.0
+- Add support for Dolby Audio Speaker System 3.xxxxx.yyy.z
+- Add support for Dolby Atmos Sound System 3.xxxxx.yyy.z
+- Update Nahmic UWP driver requirement (at least Win10 RS4 x64)
+
+26/8/2018
+APO Driver 2.1.8
+- Update NahimicService to 2.1.7.53304
+- Update FX Configurator 2.0.1.3
+- Update all Dolby UWP Product Config
+- DTS preset file fow UWP app relocated at C:\Windows\system32\DTS\PC\Apo3x\dtsapo3oemconfig.xml
+
+FX Configurator 2.0.1.3
+- Fix showing wrong device state
+- Fix disable all enhancements option
+- Fix LFX and GFX Processing Modes Registry Key Reading Problem
+
+12/8/2018
+APO Driver 2.1.7
+- Fix Dolby UWP Products (v3) (Win10+) Product Config
+- Fix Dolby Atmos for Gaming (v3) (Win10+) Product Config
+
+9/8/2018
+APO Driver 2.1.6
+- Add Dolby DAX API Service 3.20200.247.0
+- Update FX Configurator to 2.0.1.2
+- Update Creative.UWPRPCService.exe to 2.0.2.1
+- Update NahimicService to 2.1.6.52885
+- Add QSound support
+- Add VIA System Effect Config hardware specified support
+- Add Dolby Atmos/Atmos Sound System Config hardware specified support
+- Update all dll files with newer file signature
+
+FX Configurator 2.0.1.2
+- New GUI Design
+- Add Product Config Tool
+- Remake all ini configs
+
+21/7/2018
+APO Driver 2.1.3
+- Update Dolby DAX API Service to 2.1003.255.0
+
+18/7/2018
+APO Driver 2.1.2
+- Update NahimicService to 2.1.4.52339
+
+6/7/2018
+APO Driver 2.1.1
+- Update Dolby DAX API Service to 2.3.229.0
+- Update NahimicService to 2.1.3.51975
+
+3/7/2018
+APO Driver 2.1.0
+- Fix DTS Headphone:X v1 UWP app detection problem
+
+29/6/2018
+APO Driver 2.0.9
+- Remove multiple effect configs
+- Update Creative.UWPRPCService.exe to 1.0.0.13
+
+26/6/2018
+APO Driver 2.0.8
+- Update Dolby DAX API Service to 2.1003.251.0
+- Add Dolby UWP apps + Viper4Windows config
+- Add Sound Blaster Connect Desktop config
+
+23/6/2018
+APO Driver 2.0.6
+- Add support for Sound Blaster Cinema
+- Add support for Sound Blaster Cinema 2
+- Add support for Sound Blaster X-Fi MB2
+- Add support for Sound Blaster X-Fi MB3
+- Add support for THX TruStudio Pro
+- Return Creative Sound Blaster Connect UWP driver to 2.0.0.14
+- Remove kga file installation feature
+
+20/6/2018
+APO Driver 2.0.1
+- Update Dolby DAX API services 2.1003.250.0
+
+19/6/2018
+APO Driver 2.0.0
+- Add support for Sound Blaster Cinema 3
+- Add support for Sound Blaster X-Fi MB5
+- Add support for DTS Audio - DTS HeadphoneX v1 UWP app
+- Remaster config file and registry
+- Add two version of Dolby DAX API services
+- Add kga files for unlock Creative products
+- Update Sound Blaster Connect UWP app driver to 2.0.0.19
+- New installer UI
+- Realtek audio driver not longer necessary
+- Add a support list table on the post
+
+12/6/2018
+APO Driver 1.0.9
+- Update Dolby DAX API Service to 2.1002.248.0
+- Add support for Dolby Audio Premium, Dolby Atmos Speaker System and Dolby Atmos for Gaming
+- Fix Dolby UWP App equalizer no effects
+
+9/6/2018
+APO Driver 1.0.8
+- Update NahimicService to 2.1.1.51442
+- Update Waves Audio Services
+- Update FX Configurator to 2.0.0.8
+- Add support for Sonic Studio 3 and Alienware Sound Center UWP App
+- Add Sound Blaster Connect UWPService install option
+
+FX Configurator 2.0.0.8
+- Add disable all enhancements control
+- Add sound control panel button
+
+26/5/2018
+APO Driver 1.0.7
+- Add backup and restore endpoint registry key function (FX Configurator 2.0.0.7)
+- Update Dolby DAX API Service to 2.3.227.0
+- Fix UWPService not remove after uninstalled
+- Fix all multiple config that include Viper4Windows not working problem
+
+22/5/2018
+Add Sound Blaster Connect UWP App Support - APO Driver 1.0.6
+
+20/5/2018
+Add MaxxAudioPro - APO Driver 1.0.5
+
+13/5/2018
+Add Nahimic 3 - APO Driver 1.0.4
+
+13/5/2018
+Add DTS Digital Entertainment UI - APO Driver 1.0.3
+
+10/5/2018
+Fix SetACL 32bit problem
+
+9/5/2018
+Fix APO Driver x86 installation location problem
+
+4/5/2018
+APO Driver 1.0.0 x64 x86 release
+
+29/4/2018
+Update FX Configurator to 2.0.0.5
+
+22/4/2018
+Fix Harman & Dolby UWP dll file missing & not register - APO Driver 6.0.1.8419 Revision
+Update FX Configurator to 2.0.0.3
+
+20/4/2018
+Add ASUS Sonic Focus/SonicMaster Config, Driver, Software
+Add Windows 7/8 Multiple Sound Effects Config
+Update APO Driver to 8419
