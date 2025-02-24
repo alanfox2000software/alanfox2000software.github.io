@@ -1,0 +1,39 @@
+<p>&nbsp;</p>
+<h1>Usage</h1>
+<div class="changelog-entry">
+<ol>
+<li>Select **only the driver** described on the Audio Enhancers page (APO Driver Component) during APO Driver installation.
+<ul>
+<li>Do not select multiple child components if the parent component specifies "[Choose Only One]." For example:
+<ul>
+<li><strong>Dolby DAX API Service [Choose Only One]</strong> (Parent Component)
+<ul>
+<li>Dolby DAX API Service 2.3.231.0 (child component)</li>
+<li>Dolby DAX API Service 3.20403.436.0 (child component)</li>
+</ul>
+</li>
+<li><em>Select either Dolby DAX API Service 2.3.231.0 or Dolby DAX API Service 3.20403.436.0&mdash;do not select both.</em></li>
+</ul>
+</li>
+<li>If the message <em>"Service 'UWP PRC Service' failed to start"</em> appears during installation, **uncheck** "UWP Services" under "Sound Blaster Connect."</li>
+<li>To avoid NahimicService.exe modifying Stream FX and Mode FX registry keys, **deselect** Nahimic driver installation if you do not want Nahimic 3.</li>
+</ul>
+</li>
+<li>Open FX Configurator via <code>Lanuher.exe</code> and select your desired endpoint.</li>
+<li>Click the <strong>"Backup"</strong> button under the <strong>"Endpoint Registry"</strong> section. Follow the audio enhancer installation instructions.</li>
+<li>Use the <strong>"Product Config Tool"</strong> button under the <strong>"Tools"</strong> section. Select a product from the dropdown list and click <strong>"Apply Product Settings to Selected Endpoints."</strong></li>
+</ol>
+<iframe title="How to Use APO Driver with Audio Enhancers (Updated)" src="https://www.youtube.com/embed/yw67mhoorXY" width="851" height="480" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<p>&nbsp;</p>
+<h3>Additional Notes:</h3>
+<ul>
+<li>To install/remove additional APOs: Go to <strong>Start Menu &gt; APO Driver &gt; Maintenance Driver.</strong></li>
+</ul>
+<h3>Uninstalling APO Driver:</h3>
+<ol>
+<li>Use the <strong>"Restore"</strong> button under the <strong>"Endpoint Registry"</strong> section for any endpoints modified via Product Config Tool.</li>
+<li>Close all sound enhancer processes.</li>
+<li>Uninstall APO Driver via Windows Programs and Features.</li>
+</ol>
+<p>&nbsp;</p>
+</div>

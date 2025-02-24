@@ -7,31 +7,33 @@
 </head>
 <body>
     <div class="tab-container">
-        <button class="tab-button active" onclick="openTab(event, 'tab1')">Audio Enhancers</button>
-        <button class="tab-button" onclick="openTab(event, 'tab2')">Windows Store</button>
-        <button class="tab-button" onclick="openTab(event, 'tab3')">OS Supoort</button>
-        <button class="tab-button" onclick="openTab(event, 'tab4')">Albums</button>
-        <button class="tab-button" onclick="openTab(event, 'tab5')">Changelog</button>
+        <button class="tab-button active" onclick="openTab(event, 'usage')">Usage</button>
+        <button class="tab-button" onclick="openTab(event, 'changelog')">Changelog</button>
+        <button class="tab-button" onclick="openTab(event, 'audioenahcers')">Audio Enhancers</button>
+        <button class="tab-button" onclick="openTab(event, 'windowsstore')">Windows Store</button>
+        <button class="tab-button" onclick="openTab(event, 'ossupport')">OS Support</button>
+        <button class="tab-button" onclick="openTab(event, 'albums')">Albums</button>
     </div>
-
-    <div id="tab1" class="tab-content active">
+    <div id="usage" class="tab-content active">
+        <iframe src="usage.html"></iframe>
+    </div>
+    <div id="changelog class="tab-content">
+        <iframe src="changelog.html"></iframe>
+    </div>
+    <div id="audioenahcers" class="tab-content">
         <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRTQhF3f4RXOc2WAh9pgnLM9H3ynZ3lExE2ZXNABCGnJJBEUct4FvZC9LHI6AepvlY54PKSQz13fptN/pubhtml?gid=0&single=true&widget=false&headers=false&chrome=false"></iframe>
     </div>
 
-    <div id="tab2" class="tab-content">
+    <div id="windowsstore" class="tab-content">
         <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRTQhF3f4RXOc2WAh9pgnLM9H3ynZ3lExE2ZXNABCGnJJBEUct4FvZC9LHI6AepvlY54PKSQz13fptN/pubhtml?gid=1560495341&single=true&widget=true&headers=false&chrome=false"></iframe>
     </div>
 
-    <div id="tab3" class="tab-content">
+    <div id="ossupport" class="tab-content">
         <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRTQhF3f4RXOc2WAh9pgnLM9H3ynZ3lExE2ZXNABCGnJJBEUct4FvZC9LHI6AepvlY54PKSQz13fptN/pubhtml?gid=1595350915&single=true&widget=true&headers=false&chrome=false""></iframe>
     </div>
 
-    <div id="tab4" class="tab-content">
+    <div id="albums" class="tab-content">
         <iframe src="ablums.html"></iframe>
-    </div>
-
-    <div id="tab5" class="tab-content">
-        <iframe src="changelog.html"></iframe>
     </div>
 
     <script>
