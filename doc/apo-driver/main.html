@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>APO Driver Documentation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="tab-container">
+        <button class="tab-button active" onclick="openTab(event, 'tab1')">Audio Enhancers</button>
+        <button class="tab-button" onclick="openTab(event, 'tab2')">UWP Links</button>
+        <button class="tab-button" onclick="openTab(event, 'tab3')">Spreadsheet 3</button>
+        <button class="tab-button" onclick="openTab(event, 'tab4')">Albums</button>
+        <button class="tab-button" onclick="openTab(event, 'tab5')">Changelog</button>
+    </div>
+
+    <div id="tab1" class="tab-content active">
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRTQhF3f4RXOc2WAh9pgnLM9H3ynZ3lExE2ZXNABCGnJJBEUct4FvZC9LHI6AepvlY54PKSQz13fptN/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+    </div>
+
+    <div id="tab2" class="tab-content">
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRTQhF3f4RXOc2WAh9pgnLM9H3ynZ3lExE2ZXNABCGnJJBEUct4FvZC9LHI6AepvlY54PKSQz13fptN/pubhtml?gid=1560495341&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+    </div>
+
+    <div id="tab3" class="tab-content">
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRTQhF3f4RXOc2WAh9pgnLM9H3ynZ3lExE2ZXNABCGnJJBEUct4FvZC9LHI6AepvlY54PKSQz13fptN/pubhtml?gid=1595350915&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+    </div>
+
+    <div id="tab4" class="tab-content">
+        <iframe src="ablums.html"></iframe>
+    </div>
+
+    <div id="tab5" class="tab-content">
+        <iframe src="changelog.html"></iframe>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            let tabContents = document.getElementsByClassName("tab-content");
+            for (let i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove("active");
+            }
+
+            let tabButtons = document.getElementsByClassName("tab-button");
+            for (let i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].classList.remove("active");
+            }
+
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+</html>

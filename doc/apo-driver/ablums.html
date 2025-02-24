@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Image Gallery</h1>
+    <div class="image-grid">
+        <!-- Thumbnail Items -->
+        <div class="thumbnail">
+            <img src="images/cover.png" alt="Cover" class="thumbnail-img">
+        </div>
+        <div class="thumbnail">
+            <img src="images/Dashboard.jpg" alt="Dashboard" class="thumbnail-img">
+        </div>
+        <div class="thumbnail">
+            <img src="images/dolby-advanced-audio.png" alt="Dolby Advanced Audio" class="thumbnail-img">
+        </div>
+        <!-- Add all other images following same pattern -->
+        <div class="thumbnail">
+            <img src="images/DTS.png" alt="DTS" class="thumbnail-img">
+        </div>
+        <div class="thumbnail">
+            <img src="images/DTS-Surround-Sensation-Speaker-DTS-Ultra-PC.png" alt="DTS Surround" class="thumbnail-img">
+        </div>
+        <!-- Continue adding all remaining images -->
+        <!-- Example of remaining images (add all from your list) -->
+        <div class="thumbnail">
+            <img src="images/Image-1.png" alt="Image 1" class="thumbnail-img">
+        </div>
+        <div class="thumbnail">
+            <img src="images/Image15.png" alt="Image 15" class="thumbnail-img">
+        </div>
+        <!-- Add remaining Image-2 through Image-14 following same pattern -->
+    </div>
+
+    <!-- Modal Popup -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script>
+        // Get modal elements
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImage");
+        const span = document.getElementsByClassName("close")[0];
+
+        // When user clicks on thumbnail
+        document.querySelectorAll('.thumbnail-img').forEach(img => {
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+            }
+        });
+
+        // When user clicks on (x) or outside image
+        span.onclick = function() { 
+            modal.style.display = "none";
+        }
+        
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

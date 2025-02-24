@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Data Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .tabs {
+            display: flex;
+            margin-bottom: -1px;
+        }
+        .tab {
+            padding: 15px 30px;
+            background-color: #e0e0e0;
+            border: none;
+            border-radius: 5px 5px 0 0;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .tab.active {
+            background-color: #fff;
+            font-weight: bold;
+        }
+        .tab:hover:not(.active) {
+            background-color: #eee;
+        }
+        .tab-content {
+            display: none;
+            background-color: white;
+            border-radius: 0 5px 5px 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            height: calc(100vh - 100px);
+        }
+        .tab-content.active {
+            display: block;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        #changelog {
+            padding: 20px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="tabs">
+            <button class="tab active" onclick="openTab(event, 'tab1')">Tab 1</button>
+            <button class="tab" onclick="openTab(event, 'tab2')">Tab 2</button>
+            <button class="tab" onclick="openTab(event, 'tab3')">Tab 3</button>
+            <button class="tab" onclick="openTab(event, 'tab4')">Changelog</button>
+        </div>
+
+        <div id="tab1" class="tab-content active">
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRTQhF3f4RXOc2WAh9pgnLM9H3ynZ3lExE2ZXNABCGnJJBEUct4FvZC9LHI6AepvlY54PKSQz13fptN/pubhtml?gid=0&single=true&widget=true&headers=false"></iframe>
+        </div>
+
+        <div id="tab2" class="tab-content">
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRTQhF3f4RXOc2WAh9pgnLM9H3ynZ3lExE2ZXNABCGnJJBEUct4FvZC9LHI6AepvlY54PKSQz13fptN/pubhtml?gid=1560495341&single=true&widget=true&headers=false"></iframe>
+        </div>
+
+        <div id="tab3" class="tab-content">
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRTQhF3f4RXOc2WAh9pgnLM9H3ynZ3lExE2ZXNABCGnJJBEUct4FvZC9LHI6AepvlY54PKSQz13fptN/pubhtml?gid=1595350915&single=true&widget=true&headers=false"></iframe>
+        </div>
+
+        <div id="tab4" class="tab-content">
+            <div id="changelog">
+                <h2>Changelog</h2>
+                <!-- Add your changelog content here -->
+                <p>Version 1.0 - Initial release</p>
+                <p>Version 1.1 - Added new data sources</p>
+                <p>Version 1.2 - Improved mobile responsiveness</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            // Hide all tab contents
+            const tabContents = document.getElementsByClassName("tab-content");
+            for (let i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove("active");
+            }
+
+            // Remove active class from all tabs
+            const tabs = document.getElementsByClassName("tab");
+            for (let i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove("active");
+            }
+
+            // Show selected tab and mark button as active
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+            
+            // Reset iframe heights to ensure proper sizing
+            const iframes = document.getElementsByTagName('iframe');
+            for (let iframe of iframes) {
+                iframe.style.height = "calc(100vh - 100px)";
+            }
+        }
+    </script>
+</body>
+</html>
