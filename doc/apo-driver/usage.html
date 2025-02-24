@@ -1,39 +1,280 @@
-<p>&nbsp;</p>
-<h1>Usage</h1>
-<div class="changelog-entry">
-<ol>
-<li>Select **only the driver** described on the Audio Enhancers page (APO Driver Component) during APO Driver installation.
-<ul>
-<li>Do not select multiple child components if the parent component specifies "[Choose Only One]." For example:
-<ul>
-<li><strong>Dolby DAX API Service [Choose Only One]</strong> (Parent Component)
-<ul>
-<li>Dolby DAX API Service 2.3.231.0 (child component)</li>
-<li>Dolby DAX API Service 3.20403.436.0 (child component)</li>
-</ul>
-</li>
-<li><em>Select either Dolby DAX API Service 2.3.231.0 or Dolby DAX API Service 3.20403.436.0&mdash;do not select both.</em></li>
-</ul>
-</li>
-<li>If the message <em>"Service 'UWP PRC Service' failed to start"</em> appears during installation, **uncheck** "UWP Services" under "Sound Blaster Connect."</li>
-<li>To avoid NahimicService.exe modifying Stream FX and Mode FX registry keys, **deselect** Nahimic driver installation if you do not want Nahimic 3.</li>
-</ul>
-</li>
-<li>Open FX Configurator via <code>Lanuher.exe</code> and select your desired endpoint.</li>
-<li>Click the <strong>"Backup"</strong> button under the <strong>"Endpoint Registry"</strong> section. Follow the audio enhancer installation instructions.</li>
-<li>Use the <strong>"Product Config Tool"</strong> button under the <strong>"Tools"</strong> section. Select a product from the dropdown list and click <strong>"Apply Product Settings to Selected Endpoints."</strong></li>
-</ol>
-<iframe title="How to Use APO Driver with Audio Enhancers (Updated)" src="https://www.youtube.com/embed/yw67mhoorXY" width="851" height="480" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-<p>&nbsp;</p>
-<h3>Additional Notes:</h3>
-<ul>
-<li>To install/remove additional APOs: Go to <strong>Start Menu &gt; APO Driver &gt; Maintenance Driver.</strong></li>
-</ul>
-<h3>Uninstalling APO Driver:</h3>
-<ol>
-<li>Use the <strong>"Restore"</strong> button under the <strong>"Endpoint Registry"</strong> section for any endpoints modified via Product Config Tool.</li>
-<li>Close all sound enhancer processes.</li>
-<li>Uninstall APO Driver via Windows Programs and Features.</li>
-</ol>
-<p>&nbsp;</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf8">
+   </head>
+   <body>
+      <h1><img src="https://alanfox2000software.github.io/doc/apo-driver/images/tutorial.png" alt="" /></h1>
+      <div>
+         <ol>
+            <li>
+               Select **only the driver** described on the Audio Enhancers page (APO Driver Component) during APO Driver installation.
+               <ul>
+                  <li>
+                     Do not select multiple child components if the parent component specifies "[Choose Only One]." For example:
+                     <ul>
+                        <li>
+                           <strong>Dolby DAX API Service [Choose Only One]</strong> (Parent Component)
+                           <ul>
+                              <li>Dolby DAX API Service 2.3.231.0 (child component)</li>
+                              <li>Dolby DAX API Service 3.20403.436.0 (child component)</li>
+                           </ul>
+                        </li>
+                        <li><em>Select either Dolby DAX API Service 2.3.231.0 or Dolby DAX API Service 3.20403.436.0&mdash;do not select both.</em></li>
+                     </ul>
+                  </li>
+                  <li>If the message <em>"Service 'UWP PRC Service' failed to start"</em> appears during installation, **uncheck** "UWP Services" under "Sound Blaster Connect."</li>
+                  <li>To avoid NahimicService.exe modifying Stream FX and Mode FX registry keys, **deselect** Nahimic driver installation if you do not want Nahimic 3.</li>
+               </ul>
+            </li>
+            <li>Open FX Configurator via <code>Lanuher.exe</code> and select your desired endpoint.</li>
+            <li>Click the <strong>"Backup"</strong> button under the <strong>"Endpoint Registry"</strong> section. Follow the audio enhancer installation instructions.</li>
+            <li>Use the <strong>"Product Config Tool"</strong> button under the <strong>"Tools"</strong> section. Select a product from the dropdown list and click <strong>"Apply Product Settings to Selected Endpoints."</strong></li>
+         </ol>
+      </div>
+      <p><iframe title="How to use APO Driver with Audio Enhancers Updated" src="https://www.youtube.com/embed/yw67mhoorXY" width="851" height="480" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+      <p>&nbsp;</p>
+      <h3>Additional Notes:</h3>
+      <ul>
+         <li>To install/remove additional APOs: Go to <strong>Start Menu &gt; APO Driver &gt; Maintenance Driver.</strong></li>
+      </ul>
+      <h3>Uninstalling APO Driver:</h3>
+      <ol>
+         <li>Use the <strong>"Restore"</strong> button under the <strong>"Endpoint Registry"</strong> section for any endpoints modified via Product Config Tool.</li>
+         <li>Close all sound enhancer processes.</li>
+         <li>Uninstall APO Driver via Windows Programs and Features.</li>
+      </ol>
+      <h3>Silent Install:</h3>
+      <p>You can silently install using the following command line:</p>
+      <p><em>apo_driver_setup_x64.exe /exenoui /qn ADDLOCAL="Base,Identier,Identier2"</em></p>
+      <p>Ensure you have add "Base" in ADDLOCAL.</p>
+      <table style="height: 1062px; width: 500px; border-collapse: collapse;" border="10" cellspacing="9" cellpadding="5">
+         <tbody>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Feature</td>
+               <td style="width: 2.3079%; height: 18px;">Identier</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Nahimic 3 APO</td>
+               <td style="width: 2.3079%; height: 18px;">NhAPO3</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Nahimic APO 4</td>
+               <td style="width: 2.3079%; height: 18px;">NhAPO4</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Nahimic 3 Settings for APO3</td>
+               <td style="width: 2.3079%; height: 18px;">Nh3.NhAPO3.Settings</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Nahimic 3 Settings for APO4</td>
+               <td style="width: 2.3079%; height: 18px;">Nh3.NhAPO4.Settings</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Sonic Studio 3 Settings for APO3</td>
+               <td style="width: 2.3079%; height: 18px;">SS3.NhAPO3.Settings</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Sonic Studio 3 Settings for APO4</td>
+               <td style="width: 2.3079%; height: 18px;">SS3.NhAPO4.Settings</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Nahimic Mirroring Device</td>
+               <td style="width: 2.3079%; height: 18px;">NhMirror</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Sonic Studio Virtual Mixer</td>
+               <td style="width: 2.3079%; height: 18px;">SS3VAD</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Nahimic Easy Surround</td>
+               <td style="width: 2.3079%; height: 18px;">NhBTLink</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Audio by Harman APO</td>
+               <td style="width: 2.3079%; height: 18px;">HMAPO</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Creative Wrapper</td>
+               <td style="width: 2.3079%; height: 18px;">CTAPO1.Wrapper</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Creative APO 1.0.62.0</td>
+               <td style="width: 2.3079%; height: 18px;">CTAPO1.MBAPO1</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Creative APO 1.2.65.18</td>
+               <td style="width: 2.3079%; height: 18px;">CTAPO1.MBAPO1.2</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Creative THX APO</td>
+               <td style="width: 2.3079%; height: 18px;">CTAPO1.THXAPO</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Creative UWP RPC Service 2.0.3.4</td>
+               <td style="width: 2.3079%; height: 18px;">CTAPO2.UWPService</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Creative Audio Effects Component 2.0.0.14</td>
+               <td style="width: 2.3079%; height: 18px;">CTAPO2.MBAPO2</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">DTS Connect APO</td>
+               <td style="width: 2.3079%; height: 18px;">DTS.Connect</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">DTS Digital Entertainment</td>
+               <td style="width: 2.3079%; height: 18px;">DTS.Digital</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">DTS Universal APO (Desktop)</td>
+               <td style="width: 2.3079%; height: 18px;">DTSUAPO3x.Desktop</td>
+            </tr>
+            <tr style="height: 36px;">
+               <td style="width: 110.435%; height: 36px;">[Optional] XML Config for External Speakers (Desktop)</td>
+               <td style="width: 2.3079%; height: 36px;">DTSUAPO3x.Desktop.XML</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">DTS APO3x (UWP)</td>
+               <td style="width: 2.3079%; height: 18px;">DTSUAPO3x</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">[Optional] XML Config for External Speakers (UWP)</td>
+               <td style="width: 2.3079%; height: 18px;">DTSUAPO3x.XML</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">DTS APO4x</td>
+               <td style="width: 2.3079%; height: 18px;">DTSUAPO4x</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">DTS APO4x Service</td>
+               <td style="width: 2.3079%; height: 18px;">DTSUAPO4x.Service</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Dolby DAX2</td>
+               <td style="width: 2.3079%; height: 18px;">DAX2</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Dolby Atmos</td>
+               <td style="width: 2.3079%; height: 18px;">DAX3</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Dolby Headphones</td>
+               <td style="width: 2.3079%; height: 18px;">DHv2</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Dolby PCEE3</td>
+               <td style="width: 2.3079%; height: 18px;">PCEE3</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Dolby PCEE4</td>
+               <td style="width: 2.3079%; height: 18px;">PCEE4</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Dolby DAX API Service</td>
+               <td style="width: 2.3079%; height: 18px;">Dolby_UWP_3.x</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Dirac Audio Effects</td>
+               <td style="width: 2.3079%; height: 18px;">Dirac.APO</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Dirac Audio Service</td>
+               <td style="width: 2.3079%; height: 18px;">Dirac.Service</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">CriDspApo Component</td>
+               <td style="width: 2.3079%; height: 18px;">Dirac</td>
+            </tr>
+            <tr style="height: 36px;">
+               <td style="width: 110.435%; height: 36px;">IntelliSonic Speech Enhancement Technology</td>
+               <td style="width: 2.3079%; height: 36px;">IntelliSonic</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">QSound</td>
+               <td style="width: 2.3079%; height: 18px;">QSound</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Sonic Focus Effects</td>
+               <td style="width: 2.3079%; height: 18px;">SF3</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">SRS Universal APO</td>
+               <td style="width: 2.3079%; height: 18px;">SRS</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">VIA System Effect</td>
+               <td style="width: 2.3079%; height: 18px;">VIASysFx</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">3D Virtual Surround</td>
+               <td style="width: 2.3079%; height: 18px;">VtSrd</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Samsung EDS</td>
+               <td style="width: 2.3079%; height: 18px;">SamsungEDS</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Dolby Atmos</td>
+               <td style="width: 2.3079%; height: 18px;">DolbyAtmos</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Dolby Atmos Speaker System</td>
+               <td style="width: 2.3079%; height: 18px;">DolbyAtmosSpeakerSystem</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Dolby Atmos Sound System</td>
+               <td style="width: 2.3079%; height: 18px;">DolbyAtmosSoundSystem</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Dolby Audio</td>
+               <td style="width: 2.3079%; height: 18px;">DolbyAudio</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Dolby Audio Premium</td>
+               <td style="width: 2.3079%; height: 18px;">DolbyAudioPremium</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Dolby Audio Speaker System</td>
+               <td style="width: 2.3079%; height: 18px;">DolbyAudioSpeakerSystem</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Dolby Atmos For Gaming</td>
+               <td style="width: 2.3079%; height: 18px;">DolbyAtmosForGaming</td>
+            </tr>
+            <tr style="height: 36px;">
+               <td style="width: 110.435%; height: 36px;">Dolby Atmos Speaker System For Gaming</td>
+               <td style="width: 2.3079%; height: 36px;">DolbyAtmosSpeakerSystemForGaming</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Dolby Access</td>
+               <td style="width: 2.3079%; height: 18px;">DolbyAccess</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">Dolby Access OEM</td>
+               <td style="width: 2.3079%; height: 18px;">DolbyAccessOEM</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">DTS:X Ultra</td>
+               <td style="width: 2.3079%; height: 18px;">DTSXUltra</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">DTS Audio Processing</td>
+               <td style="width: 2.3079%; height: 18px;">DTSAudioProcessing</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">DTS Custom for ASUS</td>
+               <td style="width: 2.3079%; height: 18px;">DTSCustomforASUS</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">DTS Headphone:X v1</td>
+               <td style="width: 2.3079%; height: 18px;">DTSHeadphoneXv1</td>
+            </tr>
+            <tr style="height: 18px;">
+               <td style="width: 110.435%; height: 18px;">DTS Studio Sound</td>
+               <td style="width: 2.3079%; height: 18px;">DTSStudioSound</td>
+            </tr>
+         </tbody>
+      </table>
+   </body>
+</html>
