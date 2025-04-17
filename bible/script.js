@@ -120,9 +120,21 @@ function initBooks() {
         .join('');
 }
 
+async function testFileAccess() {
+  try {
+    const response = await fetch('data/books/genesis.json');
+    console.log('HTTP status:', response.status);
+    const text = await response.text();
+    console.log('File content:', text);
+  } catch (error) {
+    console.error('File access error:', error);
+  }
+}
+
 // Start the application
 document.addEventListener('DOMContentLoaded', async () => {
     initBooks();
+    testFileAccess();
     
     // Load Genesis by default
     const genesisBook = bookManifest.find(b => b.name === "Genesis");
