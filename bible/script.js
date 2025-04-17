@@ -59,22 +59,22 @@ async function loadBook(bookFile) {
     try {
         bookData = await loadBookData(bookFile);
         if (!bookData) throw new Error('No book data received');
-        
-        currentBook = Object.keys(bookData)[0];
-        currentChapter = '1'; // Force first chapter
-        
-        if (!bookData[currentBook][currentChapter]) {
-            currentChapter = Object.keys(bookData[currentBook])[0];
-        }
 
+        currentBook = Object.keys(bookData)[0];
+        currentChapter = '1';
+
+        // Check if navigation element exists
+        const navElement = document.getElementById('navigation');
+        if (!navElement) throw new Error('Navigation element not found');
+        
+        navElement.style.display = 'flex'; // Now safe to modify
         updateChapterNavigation();
         loadChapter(currentChapter);
-        document.getElementById('navigation').style.display = 'flex';
 
     } catch (error) {
         console.error("Book load failed:", error);
         document.getElementById('verses').innerHTML = 
-            `<p class="error">Error loading book. Please try again.</p>`;
+            `<p class="error">${error.message}</p>`;
     }
 }
 
