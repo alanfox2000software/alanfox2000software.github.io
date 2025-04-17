@@ -8,6 +8,23 @@ let currentChapter = null;
 let bookData = null;
 const bookCache = {};
 
+// Initialize the app properly
+async function initApp() {
+    // Initialize book list
+    const bookList = document.getElementById('book-list');
+    bookList.innerHTML = bookManifest
+        .map(book => `<button onclick="loadBook('${book.file}')">${book.name}</button>`)
+        .join('');
+    
+    // Load Genesis by default
+    try {
+        await loadBook('genesis.json');
+    } catch (error) {
+        console.error("Failed to load Genesis:", error);
+        alert("Error loading initial content. Please refresh.");
+    }
+}
+
 // Navigation controls
 document.getElementById('prevChapter').addEventListener('click', () => {
     const prev = parseInt(currentChapter) - 1;
@@ -22,8 +39,8 @@ document.getElementById('nextChapter').addEventListener('click', () => {
 async function loadBookData(bookFile) {
     if (!bookCache[bookFile]) {
         const response = await fetch(`data/books/${bookFile}`);
-        const data = await response.json();
-        bookCache[bookFile] = data;
+        if (!response.ok) throw new Error(`Failed to fetch ${bookFile}`);
+        bookCache[bookFile] = await response.json();
     }
     return bookCache[bookFile];
 }
@@ -32,26 +49,17 @@ async function loadBook(bookFile) {
     try {
         bookData = await loadBookData(bookFile);
         currentBook = Object.keys(bookData)[0];
-        currentChapter = Object.keys(bookData[currentBook])[0];
+        currentChapter = '1'; // Force load chapter 1
         
+        // Update UI
         document.getElementById('navigation').style.display = 'flex';
-        updateChapterNavigation();
         loadChapter(currentChapter);
+        updateChapterNavigation();
+        
     } catch (error) {
-        console.error("Failed to load book:", error);
+        console.error("Book load failed:", error);
+        alert("Error loading book. Please try again.");
     }
-}
-
-function updateChapterNavigation() {
-    const chapters = Object.keys(bookData[currentBook]);
-    const chapterNumbers = document.getElementById('chapter-numbers');
-    
-    chapterNumbers.innerHTML = chapters.map(chapter => `
-        <button class="chapter-btn ${chapter === currentChapter ? 'active' : ''}" 
-                onclick="loadChapter('${chapter}')">
-            ${chapter}
-        </button>
-    `).join('');
 }
 
 function loadChapter(chapter) {
@@ -66,6 +74,20 @@ function loadChapter(chapter) {
     `;
     updateChapterNavigation();
 }
+
+function updateChapterNavigation() {
+    const chapters = Object.keys(bookData[currentBook]);
+    const chapterNumbers = document.getElementById('chapter-numbers');
+    
+    chapterNumbers.innerHTML = chapters.map(chapter => `
+        <button class="chapter-btn ${chapter === currentChapter ? 'active' : ''}" 
+                onclick="loadChapter('${chapter}')">
+            ${chapter}
+        </button>
+    `).join('');
+}
+
+
 
 function initBooks() {
     const bookList = document.getElementById('book-list');
@@ -121,16 +143,7 @@ window.addEventListener('DOMContentLoaded', async () => {
     }
 });
 
-// Initialize books and load Genesis
-function initApp() {
-    initBooks();
-    
-    // Load Genesis after slight delay to ensure DOM is ready
-    setTimeout(async () => {
-        const genesis = bookManifest.find(b => b.name === "Genesis");
-        if (genesis) await loadBook(genesis.file);
-    }, 100);
-}
+
 
 // Start the app
-initApp();
+document.addEventListener('DOMContentLoaded', initApp);
