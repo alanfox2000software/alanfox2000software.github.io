@@ -3,27 +3,33 @@
 <head>
     <title>Bible & Pseudepigrapha</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Mobile menu button -->
-    <div id="mobile-menu" onclick="toggleSidebar()">☰</div>
+    <button id="mobile-menu" aria-label="Toggle menu">☰</button>
     
     <div class="container">
         <!-- Left Sidebar -->
-        <div class="sidebar" id="sidebar">
+        <nav class="sidebar" id="sidebar">
             <h2>Books</h2>
             <div id="book-list"></div>
-        </div>
+        </nav>
 
         <!-- Right Content Area -->
-        <div class="main-content">
-            <div id="navigation">
-                <button id="prevChapter">&lt;</button>
-                <div id="chapter-numbers"></div>
-                <button id="nextChapter">&gt;</button>
+        <main class="main-content">
+            <div class="chapter-nav">
+                <button id="prevChapter" aria-label="Previous chapter">&lt;</button>
+                <div class="chapters-wrapper">
+                    <div id="chapter-numbers" class="chapter-numbers"></div>
+                </div>
+                <button id="nextChapter" aria-label="Next chapter">&gt;</button>
             </div>
-            <div id="verses"></div>
-        </div>
+            <article id="verses"></article>
+        </main>
     </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

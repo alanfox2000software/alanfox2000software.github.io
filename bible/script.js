@@ -74,21 +74,31 @@ function initBooks() {
         .join('');
 }
 
-// Mobile sidebar toggle
+// Mobile menu functionality
+const mobileMenu = document.getElementById('mobile-menu');
+const sidebar = document.getElementById('sidebar');
+
 function toggleSidebar() {
-    const sidebar = document.getElementById('sidebar');
-    sidebar.classList.toggle('active');
+    sidebar.style.left = sidebar.style.left === '0px' ? '-100%' : '0';
 }
 
-// Close sidebar when clicking outside on mobile
-document.addEventListener('click', (event) => {
-    const sidebar = document.getElementById('sidebar');
-    const mobileMenu = document.getElementById('mobile-menu');
-    
-    if (window.innerWidth < 768 && 
-        !event.target.closest('.sidebar') && 
-        !event.target.closest('#mobile-menu')) {
-        sidebar.classList.remove('active');
+mobileMenu.addEventListener('click', (e) => {
+    e.stopPropagation();
+    toggleSidebar();
+});
+
+document.addEventListener('click', (e) => {
+    if (window.innerWidth < 768 && !sidebar.contains(e.target)) {
+        sidebar.style.left = '-100%';
+    }
+});
+
+// Handle window resize
+window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768) {
+        sidebar.style.left = '0';
+    } else {
+        sidebar.style.left = '-100%';
     }
 });
 
