@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bible & Pseudepigrapha</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Sidebar -->
+        <div class="sidebar">
+            <h2>Books</h2>
+            <div id="book-list"></div>
+        </div>
+
+        <!-- Right Content Area -->
+        <div class="main-content">
+            <div id="chapters-section" style="display:none;">
+                <button onclick="showBooks()">← Back to Books</button>
+                <div id="chapters"></div>
+            </div>
+            <div id="verses-section" style="display:none;">
+                <button onclick="showChapters()">← Back to Chapters</button>
+                <div id="verses"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
