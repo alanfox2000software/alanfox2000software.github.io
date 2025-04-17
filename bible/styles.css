@@ -30,8 +30,6 @@ body {
     cursor: pointer;
 }
 
-.chapter-btn {
-    padding: 8px;
-    margin: 4px 0;
-    cursor: pointer;
+.verse {
+    margin: 10px 0;
 }
