@@ -18,6 +18,18 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
+@media (max-width: 767px) {
+    .main-content {
+        padding-top: 20px !important;
+    }
+    
+    #mobile-menu {
+        top: 4px;
+        left: 4px;
+        padding: 6px 12px;
+    }
+}
+
 #mobile-menu {
     display: block;
     position: fixed;

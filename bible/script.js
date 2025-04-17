@@ -29,13 +29,17 @@ async function loadBookData(bookFile) {
 }
 
 async function loadBook(bookFile) {
-    bookData = await loadBookData(bookFile);
-    currentBook = Object.keys(bookData)[0];
-    currentChapter = Object.keys(bookData[currentBook])[0];
-    
-    document.getElementById('navigation').style.display = 'flex';
-    updateChapterNavigation();
-    loadChapter(currentChapter);
+    try {
+        bookData = await loadBookData(bookFile);
+        currentBook = Object.keys(bookData)[0];
+        currentChapter = Object.keys(bookData[currentBook])[0];
+        
+        document.getElementById('navigation').style.display = 'flex';
+        updateChapterNavigation();
+        loadChapter(currentChapter);
+    } catch (error) {
+        console.error("Failed to load book:", error);
+    }
 }
 
 function updateChapterNavigation() {
@@ -102,5 +106,31 @@ window.addEventListener('resize', () => {
     }
 });
 
-// Initialize the app
-initBooks(); // Critical missing line added
+// Load Genesis by default
+window.addEventListener('DOMContentLoaded', async () => {
+    // Find Genesis in book manifest
+    const genesisBook = bookManifest.find(b => b.name === "Genesis");
+    
+    if (genesisBook) {
+        await loadBook(genesisBook.file);
+        
+        // Close mobile sidebar after loading
+        if (window.innerWidth < 768) {
+            document.getElementById('sidebar').style.left = '-100%';
+        }
+    }
+});
+
+// Initialize books and load Genesis
+function initApp() {
+    initBooks();
+    
+    // Load Genesis after slight delay to ensure DOM is ready
+    setTimeout(async () => {
+        const genesis = bookManifest.find(b => b.name === "Genesis");
+        if (genesis) await loadBook(genesis.file);
+    }, 100);
+}
+
+// Start the app
+initApp();
