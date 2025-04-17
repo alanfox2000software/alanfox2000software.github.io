@@ -74,5 +74,23 @@ function initBooks() {
         .join('');
 }
 
+// Mobile sidebar toggle
+function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    sidebar.classList.toggle('active');
+}
+
+// Close sidebar when clicking outside on mobile
+document.addEventListener('click', (event) => {
+    const sidebar = document.getElementById('sidebar');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    if (window.innerWidth < 768 && 
+        !event.target.closest('.sidebar') && 
+        !event.target.closest('#mobile-menu')) {
+        sidebar.classList.remove('active');
+    }
+});
+
 // Initialize the app
 initBooks(); // Critical missing line added

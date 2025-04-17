@@ -1,67 +1,153 @@
+:root {
+    --sidebar-width: 250px;
+    --primary-color: #2c3e50;
+    --accent-color: #3498db;
+}
+
+/* Mobile First Approach */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+#mobile-menu {
+    display: block;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    font-size: 24px;
+    background: var(--primary-color);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .container {
     display: flex;
-    height: 100vh;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .sidebar {
-    width: 250px;
-    background: #f5f5f5;
-    padding: 20px;
+    width: 100%;
+    background: #f8f9fa;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    position: fixed;
+    height: 100vh;
     overflow-y: auto;
+    z-index: 999;
 }
 
 .main-content {
-    flex: 1;
-    padding: 20px;
-    overflow-y: auto;
-}
-
-#book-list button {
-    display: block;
     width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    text-align: left;
-    cursor: pointer;
+    padding: 20px 15px;
+    margin-top: 50px; /* Space for mobile menu */
 }
 
-.verse {
-    margin: 10px 0;
+/* Desktop Styles */
+@media (min-width: 768px) {
+    #mobile-menu {
+        display: none;
+    }
+
+    .container {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        width: var(--sidebar-width);
+        transform: translateX(0);
+        position: relative;
+        height: auto;
+    }
+
+    .main-content {
+        width: calc(100% - var(--sidebar-width));
+        padding: 20px;
+        margin-top: 0;
+    }
 }
+
+/* Navigation Controls */
 #navigation {
     display: flex;
-    align-items: center;
     gap: 10px;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 #chapter-numbers {
     display: flex;
     gap: 5px;
     overflow-x: auto;
-    padding: 5px 0;
-}
-
-.chapter-btn {
-    padding: 8px 12px;
-    cursor: pointer;
-    border: 1px solid #ddd;
-    background: #f8f8f8;
-    border-radius: 4px;
-}
-
-.chapter-btn.active {
-    background: #4CAF50;
-    color: white;
-    border-color: #45a049;
+    flex-grow: 1;
 }
 
 #prevChapter, #nextChapter {
-    padding: 8px 16px;
-    font-size: 1.2em;
+    padding: 10px 15px;
+    font-size: 1.1em;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    min-width: 60px;
+}
+
+.chapter-btn {
+    padding: 10px 15px;
+    min-width: 44px;
+    text-align: center;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.chapter-btn.active {
+    background: var(--accent-color);
+    color: white;
+    border-color: var(--accent-color);
+}
+
+/* Book List */
+#book-list button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 8px 0;
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#book-list button:hover {
+    background: #f8f9fa;
+}
+
+/* Verses */
+#verses {
+    font-size: 1.1em;
+    color: #333;
+}
+
+#verses p {
+    margin: 15px 0;
+    padding: 10px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Mobile Sidebar Activation */
+.sidebar.active {
+    transform: translateX(0);
 }
