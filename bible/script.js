@@ -4,48 +4,6 @@ const bookManifest = [
 ];
 
 let currentBook = null;
-const bookCache = {};
-
-// Fetch book data
-async function loadBookData(bookFile) {
-    if (!bookCache[bookFile]) {
-        const response = await fetch(`data/books/${bookFile}`);
-        const data = await response.json();
-        bookCache[bookFile] = data;
-    }
-    return bookCache[bookFile];
-}
-
-// Load chapter 1 of a book automatically
-async function loadBook(bookFile) {
-    const bookData = await loadBookData(bookFile);
-    currentBook = Object.keys(bookData)[0]; // e.g., "1 Enoch"
-    const firstChapter = Object.keys(bookData[currentBook])[0]; // Chapter 1
-    
-    // Display verses
-    const versesDiv = document.getElementById('verses');
-    versesDiv.innerHTML = `
-        <h2>${currentBook}</h2>
-        ${Object.entries(bookData[currentBook][firstChapter])
-          .map(([verse, text]) => `
-            <p class="verse"><b>${verse}:</b> ${text}</p>
-          `).join('')}
-    `;
-}
-
-// Initialize book list
-function initBooks() {
-    const bookList = document.getElementById('book-list');
-    bookList.innerHTML = bookManifest
-        .map(book => `
-            <button onclick="loadBook('${book.file}')">
-                ${book.name}
-            </button>
-        `)
-        .join('');
-}
-
-let currentBook = null;
 let currentChapter = null;
 let bookData = null;
 const bookCache = {};
@@ -60,6 +18,15 @@ document.getElementById('nextChapter').addEventListener('click', () => {
     const next = parseInt(currentChapter) + 1;
     if (bookData[currentBook][next]) loadChapter(next.toString());
 });
+
+async function loadBookData(bookFile) {
+    if (!bookCache[bookFile]) {
+        const response = await fetch(`data/books/${bookFile}`);
+        const data = await response.json();
+        bookCache[bookFile] = data;
+    }
+    return bookCache[bookFile];
+}
 
 async function loadBook(bookFile) {
     bookData = await loadBookData(bookFile);
@@ -87,18 +54,25 @@ function loadChapter(chapter) {
     currentChapter = chapter;
     const chapterContent = bookData[currentBook][chapter];
     
-    // Update verses display
     document.getElementById('verses').innerHTML = `
         <h2>${currentBook} ${currentChapter}</h2>
         ${Object.entries(chapterContent).map(([verse, text]) => `
             <p><b>${verse}:</b> ${text}</p>
         `).join('')}
     `;
-
-    // Update chapter navigation
     updateChapterNavigation();
 }
 
+function initBooks() {
+    const bookList = document.getElementById('book-list');
+    bookList.innerHTML = bookManifest
+        .map(book => `
+            <button onclick="loadBook('${book.file}')">
+                ${book.name}
+            </button>
+        `)
+        .join('');
+}
 
-// Start
-initBooks();
+// Initialize the app
+initBooks(); // Critical missing line added
