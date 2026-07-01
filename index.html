@@ -9,6 +9,7 @@
             --bg: #0f0f0f;
             --accent: #00ccff;
             --text: #e0e0e0;
+            --card-bg: #161616;
         }
         body {
             margin: 0;
@@ -16,187 +17,144 @@
             background: var(--bg);
             color: var(--text);
             line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         header {
-            background: linear-gradient(135deg, #1a1a2e, #16213e);
-            padding: 1rem 1rem;
+            background: linear-gradient(135deg, #161623, #16213e);
+            padding: 2.5rem 1rem;
             text-align: center;
         }
-        h1 {
-            font-size: 3.5rem;
-            margin: 0;
-            color: white;
-        }
         .tagline {
-            font-size: 1.4rem;
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: white;
+            margin: 0;
+            letter-spacing: -0.5px;
+        }
+        .tagline span {
             color: var(--accent);
-            margin-top: 0.1rem;
         }
         .container {
-            max-width: 1100px;
+            max-width: 1000px;
             margin: 0 auto;
-            padding: 2rem 1rem;
+            padding: 3rem 1.5rem;
+            flex: 1;
         }
-        section {
-            margin-bottom: 4rem;
-        }
-        h2 {
-            color: var(--accent);
-            border-bottom: 2px solid #333;
-            padding-bottom: 0.5rem;
-        }
-        .projects {
+        .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 1.5rem;
         }
         .card {
-            background: #1a1a1a;
-            border-radius: 12px;
-            overflow: hidden;
-            transition: transform 0.3s, box-shadow 0.3s;
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 1.8rem;
+            border: 1px solid #222;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
         }
         .card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 10px 25px rgba(0, 204, 255, 0.2);
-        }
-        .card img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-        }
-        .card-content {
-            padding: 1.5rem;
+            transform: translateY(-4px);
+            border-color: var(--accent);
+            box-shadow: 0 8px 20px rgba(0, 204, 255, 0.1);
         }
         .card h3 {
-            margin: 0 0 0.8rem 0;
+            margin: 0 0 0.5rem 0;
             color: white;
+            font-size: 1.3rem;
         }
         .card p {
-            color: #aaa;
+            color: #999;
             font-size: 0.95rem;
+            margin: 0 0 1.5rem 0;
         }
         .btn {
             display: inline-block;
-            background: var(--accent);
-            color: #000;
-            padding: 0.7rem 1.5rem;
-            border-radius: 50px;
+            color: var(--accent);
             text-decoration: none;
             font-weight: bold;
-            margin-top: 1rem;
-            transition: all 0.3s;
+            font-size: 0.95rem;
+            transition: color 0.2s;
         }
-        .btn:hover {
-            background: #00eeff;
-            transform: scale(1.05);
+        .card:hover .btn {
+            color: #00eeff;
         }
         footer {
             text-align: center;
             padding: 2rem;
             background: #0a0a0a;
+            color: #555;
+            font-size: 0.85rem;
+            border-top: 1px solid #111;
+        }
+        footer a {
             color: #666;
-            font-size: 0.9rem;
-        }
-        .nav {
-            text-align: center;
-            margin: 2rem 0;
-        }
-        .nav a {
-            color: var(--accent);
-            margin: 0 1rem;
             text-decoration: none;
-            font-weight: 500;
+            margin-left: 8px;
+        }
+        footer a:hover {
+            color: var(--accent);
         }
     </style>
 </head>
 <body>
 
+    <!-- 頂部精簡橫幅 -->
     <header>
-        <p class="tagline">alanfox2000software Github Home Page</p>
+        <p class="tagline">alanfox2000<span>software</span></p>
     </header>
 
     <div class="container">
+        <!-- 極簡專案卡片流 -->
+        <div class="projects-grid">
+            
+            <!-- 1. eqweb 地震監測 -->
+            <div class="card">
+                <div>
+                    <h3>🌍 eqweb</h3>
+                    <p>Real-time global earthquake monitor integrating data from 25 international agencies with spider-web multi-station visualization.</p>
+                </div>
+                <a href="https://alanfox2000software.github.io/eqweb/" class="btn" target="_blank">Launch Monitor →</a>
+            </div>
 
-        <!-- 💡 導覽列：加入最新地震監測連結 -->
-        <div class="nav">
-            <a href="#eqweb">🌍 Earthquake Monitor</a>
-            <a href="#bible">📖 Read Bible</a>
-            <a href="#youtube">📺 Multi YouTube</a>
-            <a href="#blog">✍️ My Blog</a>
-            <a href="https://github.com/alanfox2000software" target="_blank">🐙 GitHub</a>
+            <!-- 2. BibleCake 聖經閱讀器 -->
+            <div class="card">
+                <div>
+                    <h3>📖 BibleCake</h3>
+                    <p>A beautiful, clean, and lightweight online Bible reader designed for distractions-free daily scriptures reading.</p>
+                </div>
+                <a href="https://alanfox2000software.github.io/biblecake/" class="btn" target="_blank">Open BibleCake →</a>
+            </div>
+
+            <!-- 3. YTCustomPlayer 多重播放 -->
+            <div class="card">
+                <div>
+                    <h3>📺 YTCustomPlayer</h3>
+                    <p>Lightweight player to watch and control multiple YouTube videos simultaneously. Perfect for reaction sync and side-by-side comparison.</p>
+                </div>
+                <a href="https://alanfox2000software.github.io/ytcustomplayer/" class="btn" target="_blank">Try Custom Player →</a>
+            </div>
+
+            <!-- 4. 部落格 -->
+            <div class="card">
+                <div>
+                    <h3>✍️ PureSoftApps</h3>
+                    <p>Technical blog sharing windows audio enhancements, APO driver modifications, and standalone utility repacks.</p>
+                </div>
+                <a href="https://puresoftapps.blogspot.com/" class="btn" target="_blank">Visit Blog →</a>
+            </div>
+
         </div>
-
-        <!-- 💡 主打專案：將最新研發的 eqweb 地震監測器擺在最上方 -->
-        <section id="eqweb">
-            <h2>🌍 eqweb - Latest Earthquake Monitor</h2>
-            <div class="projects">
-                <div class="card">
-                    <div class="card-content">
-                        <h3>全球最新地震動態監測系統</h3>
-                        <p>An interactive, real-time global earthquake monitoring dashboard. Aggregates and analyzes seismic data dynamically across 25 international geological agencies.</p>
-                        <ul style="color:#aaa; font-size:0.95rem; padding-left:20px; margin: 10px 0;">
-                            <li>Multi-agency joint observation networks with spider-web visual linking</li>
-                            <li>Bidirectional filter parameter syncing via browser URL bar</li>
-                            <li>Pure standardized time mapping with dynamic UTC+X offsets</li>
-                            <li>Responsive dual-pane adaptive sidebar and Leaflet map grid</li>
-                        </ul>
-                        <a href="https://alanfox2000software.github.io/eqweb/" class="btn" target="_blank">Launch eqweb App →</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="bible">
-            <h2>📖 BibleCake - Bible Reader</h2>
-            <div class="projects">
-                <div class="card">
-                    <div class="card-content">
-                        <h3>聖經閱讀器 (Bible Reader)</h3>
-                        <p>A beautiful and easy-to-use online Bible reader. Read the Holy Bible anytime, anywhere with a clean interface.</p>
-                        <a href="https://alanfox2000software.github.io/biblecake/" class="btn" target="_blank">Open BibleCake →</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="youtube">
-            <h2>📺 YTCustomPlayer - Multi YouTube Player</h2>
-            <div class="projects">
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Lightweight Multi-Video YouTube Player</h3>
-                        <p>Play multiple YouTube videos at the same time with sync control. Perfect for reaction videos, comparisons, or watching playlists together.</p>
-                        <ul style="color:#aaa; font-size:0.95rem; padding-left:20px; margin: 10px 0;">
-                            <li>Multi-tab playlist management</li>
-                            <li>Share via URL</li>
-                            <li>Dynamic loading from GitHub</li>
-                            <li>Dark modern UI</li>
-                        </ul>
-                        <a href="https://alanfox2000software.github.io/ytcustomplayer/" class="btn" target="_blank">Try YTCustomPlayer →</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="blog">
-            <h2>✍️ My Blog - PureSoftApps</h2>
-            <div class="projects">
-                <div class="card">
-                    <div class="card-content">
-                        <h3>PureSoftApps Blog</h3>
-                        <p>Technical tutorials focused on Windows audio enhancements, APO drivers, Realtek audio mods, .NET repacks, and fixing common audio issues.</p>
-                        <a href="https://puresoftapps.blogspot.com/" class="btn" target="_blank">Visit My Blog →</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
     </div>
 
+    <!-- 簡潔頁尾 -->
     <footer>
-        <p>&copy; 2026 alanfox2000software • Built with ❤️ for useful tools</p>
-        <p><a href="https://github.com/alanfox2000software/alanfox2000software.github.io" style="color:#555;">View source on GitHub</a></p>
+        <span>&copy; 2026 alanfox2000software</span>
+        <a href="https://github.com/alanfox2000software" target="_blank">GitHub</a>
     </footer>
 
 </body>
